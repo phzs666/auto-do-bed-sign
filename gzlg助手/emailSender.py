@@ -40,7 +40,7 @@ def send_QQ_email_plain(content):
 
     try:
         # 建立 SMTP 、SSL 的连接，连接发送方的邮箱服务器
-        smtp = smtplib.SMTP_SSL('smtp.qq.com', 465)
+        smtp = smtplib.SMTP_SSL('smtphz.qiye.163.com', 465)
 
         # 登录发送方的邮箱账号
         smtp.login(user, passwd)
