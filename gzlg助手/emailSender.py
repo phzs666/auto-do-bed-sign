@@ -20,8 +20,8 @@ def get_beijing_time():
 
 
 def send_QQ_email_plain(content):
-    sender = user = '13813151270@163.com'
-    passwd = '1933185230@phzs'
+    sender = user = 'zhangweiluo2005@qq.com'
+    passwd = 'mlqabdckjdfvbadj'
 
     # 格式化北京时间为 "年-月-日 星期几 时:分" 格式
     formatted_date = get_beijing_time()
@@ -40,7 +40,7 @@ def send_QQ_email_plain(content):
 
     try:
         # 建立 SMTP 、SSL 的连接，连接发送方的邮箱服务器
-        smtp = smtplib.SMTP_SSL('smtp.163.com', 465)
+        smtp = smtplib.SMTP_SSL('smtp.qq.com', 465)
 
         # 登录发送方的邮箱账号
         smtp.login(user, passwd)
